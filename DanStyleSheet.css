@@ -16,17 +16,13 @@ img {
 	height: 200px;
     border-width: 3px;
     border-color: white;
+    z-index:2;
+    opacity: 1;
 
 }
-.round img {
-	display: block;
-/* Stretch 
-	  height: 100%;
-	  width: 100%; */   
-}
+
 
 .round.center {
-    display: block;
     margin: 20 auto;
 }
 
@@ -116,13 +112,6 @@ img {
     width: 40%;
 }
 
-.interests {
-    line-height: 2.5;
-    font-size: 150%;
-    width: 150%;
-    text-align: left;
-}
-
 .outer {
     padding: 20px 50px; 
     position: relative;
@@ -180,30 +169,48 @@ img {
   padding: 0;
 }
 
+
+.category-button {
+  margin: 10px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  width:250px;
+  height:100px;
+}
+
+@media (max-width:810px) {
+    .category-button {
+        width:125px;
+        height:50px;
+    }
+}
+
+input[type=submit]:hover, button:active, button:focus, button:visited {
+    color:black;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.homepage.overlay {
+  background-color: rgba(43, 158, 255, 0.7);
+  display:block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index:1;
+}
+
 .circle {
-    margin: auto;
     width:250px;
     height:250px;
     border-radius:50px;
     font-size:20px;
-    color:black;
     line-height:100px;
     text-align:center;
     background:white;
-    border: solid 3px black;
-}
-
-.category-button {
-  margin: 10px;
-  min-width: 260px;
-  color: #ffffff;
-  background: transparent;
-  border: 1px solid #ffffff;
-  width:100px;
-  height:100px;
-}
-button:hover, button:active, button:focus, button:visited {
-    color:black;
-    background: #ffffff;
-    border: 1px solid #ffffff;
+    border: 2px solid black;
+    margin:0;
 }

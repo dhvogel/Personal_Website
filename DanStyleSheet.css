@@ -1,6 +1,14 @@
+* {
+    font-family:"Raleway";
+}
 div {
     display: block;
 }
+
+img {
+    border: 5px solid white;
+}
+
 .round {
 	border-radius: 50%;
 	overflow: hidden;
@@ -8,6 +16,7 @@ div {
 	height: 200px;
     border-width: 3px;
     border-color: white;
+
 }
 .round img {
 	display: block;
@@ -18,7 +27,7 @@ div {
 
 .round.center {
     display: block;
-    margin: 0 auto;
+    margin: 20 auto;
 }
 
 @font-face {
@@ -159,4 +168,42 @@ div {
 .project_block {
     float:left;
     width:50%;
+}
+
+.col.grid-example {
+  border: 1px solid #eee;
+  margin: 7px 0;
+  text-align: center;
+  line-height: 30px;
+  background-color: white;
+  color: teal;
+  padding: 0;
+}
+
+.circle {
+    margin: auto;
+    width:250px;
+    height:250px;
+    border-radius:50px;
+    font-size:20px;
+    color:black;
+    line-height:100px;
+    text-align:center;
+    background:white;
+    border: solid 3px black;
+}
+
+.category-button {
+  margin: 10px;
+  min-width: 260px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  width:100px;
+  height:100px;
+}
+button:hover, button:active, button:focus, button:visited {
+    color:black;
+    background: #ffffff;
+    border: 1px solid #ffffff;
 }

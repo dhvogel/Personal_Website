@@ -1337,6 +1337,7 @@ mark,
 .text-muted {
   color: #777;
 }
+
 .text-primary {
   color: #337ab7;
 }
@@ -1452,6 +1453,7 @@ dt {
 dd {
   margin-left: 0;
 }
+
 @media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
@@ -4377,6 +4379,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   line-height: 20px;
 }
 @media (max-width: 767px) {
+
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
@@ -6029,6 +6032,7 @@ button.close {
   }
 }
 @media (min-width: 992px) {
+  
   .modal-lg {
     width: 900px;
   }

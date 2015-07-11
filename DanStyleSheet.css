@@ -1,0 +1,162 @@
+div {
+    display: block;
+}
+.round {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+    border-width: 3px;
+    border-color: white;
+}
+.round img {
+	display: block;
+/* Stretch 
+	  height: 100%;
+	  width: 100%; */   
+}
+
+.round.center {
+    display: block;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-Thin.ttf");
+}
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("Raleway-SemiBold.ttf");
+}
+
+.techfont {
+    font-family: "Raleway";
+}
+.bold {
+    font-family: "Raleway-Bold";
+}
+.bold.section-title {
+    font-size: 200%;
+    text-align: center;
+}
+.bold.white{
+    color:white;
+}
+
+.techfont.white {
+    color: white;
+}
+
+.techfont.black {
+    color: black;
+}
+
+.font-normal {
+    font-size: 100%;
+}
+
+.block{
+    /* width: 150px, height: auto to retain aspect ratio */
+    max-height: none;
+    max-width: none;
+    height: 700px;
+    width: auto;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    
+    
+}
+
+.block.blue {
+    background-color: #2b9eff;
+}
+
+.block.white {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.middle {
+    position: relative;
+    top: 20%;
+}
+
+.experience-header{
+    float:left;
+    width:25%;
+    text-align:left;
+}
+
+.outer-pad {
+    padding: 100px 100px; 
+    position: relative;
+}
+
+.left {
+    float: left;
+    width: 40%;
+}
+
+.right {
+    float: right;
+    width: 40%;
+}
+
+.interests {
+    line-height: 2.5;
+    font-size: 150%;
+    width: 150%;
+    text-align: left;
+}
+
+.outer {
+    padding: 20px 50px; 
+    position: relative;
+}
+
+.school {
+    height: 25%
+}
+
+.school_description {
+    float: left;
+    width: 60%;
+    margin-left:30px;
+    text-align:left;
+}
+
+.school_info {
+    float:left; 
+    width:25%;
+    text-align:left;
+    margin-left:50px;
+}
+
+.experience_block {
+    float:left;
+    width:50%;
+}
+.experience {
+    height:40%;
+}
+.experience_info {
+    float:left;
+    width:25%;
+    text-align:left
+}
+.experience_description {
+    float:right; 
+    width:70%; 
+    text-align:left;
+}
+
+
+.project_block {
+    float:left;
+    width:50%;
+}

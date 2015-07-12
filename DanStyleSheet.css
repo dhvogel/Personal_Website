@@ -173,6 +173,26 @@ div {
   width:250px;
   height:100px;
 }
+.category-button:hover{
+    color:black;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.resume-button {
+  margin: 10px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  width:250px;
+  height:150px;
+  text-align:center;
+}
+
+.link-center{
+    display:block;
+    padding:100px;
+}
 
 @media (max-width:810px) {
     .category-button {
@@ -181,11 +201,7 @@ div {
     }
 }
 
-input[type=submit]:hover, button:active, button:focus, button:visited {
-    color:black;
-    background: #ffffff;
-    border: 1px solid #ffffff;
-}
+
 
 .homepage.overlay {
   background-color: rgba(43, 158, 255, 0.7);
@@ -220,4 +236,12 @@ input[type=submit]:hover, button:active, button:focus, button:visited {
     top:30%;
     right:1%;
     color:white;
+}
+
+.no-pad {
+    padding:0px!important;
+}
+
+.left-job-border {
+    border-right, border-bottom:1px solid black; 
 }

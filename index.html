@@ -1,44 +1,46 @@
-    <html>
-    <head>
-     <link rel="stylesheet" type="text/css" href="DanStyleSheet.css">
-     <title>Daniel Vogel's Webpage</title>
-     <script src="jquery-1.9.1.min.js"></script>
-     <link rel="stylesheet" type="text/css" href="materialize.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-     <script src="materialize.js"></script>
-     <script src="smooth-scroll.js"></script>
- </head>
- <body>
-
-    <div class="parallax-container colby">
+<html>
+<head>
+       <link rel="stylesheet" type="text/css" href="DanStyleSheet.css">
+       <title>Daniel Vogel's Webpage</title>
+       <script src="jquery-1.9.1.min.js"></script>
+       <link rel="stylesheet" type="text/css" href="materialize.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       <script src="materialize.js"></script>
+       <script src="smooth-scroll.js"></script>
+</head>
+<body>
+    <div class="parallax-container colby section scrollspy" id="home">
         <div class="parallax">
             <img src="colby.jpg">
         </div>
-        <div class="homepage overlay">
-        <div class ="container">
-            <div class="row">
-                <div class="col l6 m6">
-                    <span class="techfont white-text flow-text center-align"><h1>D A N I E L</h1></span>
-                </div>
 
-                <div class="col l5 offset-l1 m6">
-                    <span class="techfont white-text flow-text center-align"><h1>V O G E L</h1></span>
+        <div class="homepage overlay">
+            <div class ="container">
+                
+                <div class="row">
+                    <div class="col l6 m6">
+                        <span class="techfont white-text flow-text center-align"><h1>D A N I E L</h1></span>
+                    </div>
+
+                    <div class="col l5 offset-l1 m6">
+                        <span class="techfont white-text flow-text center-align"><h1>V O G E L</h1></span>
+                    </div>
+                </div>
+                <div class="center">
+                  <img src="colby-seal.png" height="200" width="200" onload="Materialize.fadeInImage(this);"/>
+              </div>
+              <div class="row">
+                <div class="col s4">
+                    <h2 class="center-align"><span class="flow-text white-text techfont">Current CS Major.</span></h2>
+                </div>
+                <div class="col s4 offset-s4"> 
+                    <h2 class="center-align"><span class="flow-text white-text techfont">Aspiring trophy husband.</span></h2>
                 </div>
             </div>
-              <div class="center">
-                  <img src="colby-seal.png" height="200" width="200" class="circle" onload="Materialize.fadeInImage(this);"/>
-              </div>
-          <div class="row">
-            <div class="col s4">
-                <h2 class="center-align"><span class="flow-text white-text techfont">Current CS Major.</span></h2>
-            </div>
-            <div class="col s4 offset-s4"> 
-                <h2 class="center-align"><span class="flow-text white-text techfont">Aspiring trophy husband.</span></h2>
-            </div>
-        </div>
-        <!--Note: these are not aligning and it's ticking me off-->
-        <div class="container" style="padding-top:80px">
-            
+            <!--Note: these are not aligning and it's ticking me off-->
+            <!--commenting out, for now
+            <div class="container" style="padding-top:80px">
+
                 <div class="row">
                     <div class="col l6 align-right">
                         <form action="#about_me">
@@ -64,11 +66,12 @@
                     </div>
                 </div> 
             </div>
+            -->
         </div>
     </div>
 </div>
-<div class ="block white" id="about_me">
-    <div class="outer-pad"> 
+<div class ="block white section scrollspy" id="about_me">
+    <div class="container"> 
         <div class="left">
             <p class = "bold section-title">About Me</p>
         </br>
@@ -78,7 +81,20 @@
     </div>
     <div class="right">
         <p class = "bold section-title">My Interests</p>
-        <ul class="collection" id="staggered-list">
+        <div class="col hide-on-med-and-down m3 l2 navbar" id="navbar">
+                    <ul class="section table-of-contents">
+                        <li><a href="#home" class="black-text" id="home_side">Home</a></li>
+                        <li><a href="#about_me" class="black-text" id="about_side">About Me</a></li>
+                        <li><a href="#education" class="black-text" id="edu_side">Education</a></li>
+                        <li><a href="#professional_experience" class="black-text" id="prof_side">Professional Experience</a></li>
+                        <li><a href="#projects" class="black-text" id="proj_side">Projects</a></li>
+                        <li style="padding-top:30px; padding-left:20px"><a id="facebook" href="https://www.facebook.com/danny.vog"><img src="facebook.png"></a></li>
+                        <li style="padding-left:20px"><a id="twitter" href="https://twitter.com/doeboydan"><img src="twitter.png"></a></li>
+                        <li style="padding-left:20px"><a id="linkedin" href="https://www.linkedin.com/in/dhvogel"><img src="linkedin.png"></a></li>
+                        <li style="padding-left:20px"><a id="github" href="https://github.com/dhvogel"><img src="github.png"></a></li>
+                    </ul>
+                </div>
+        <ul class="collection" id="staggered-list" style="display:none"> 
             <li class="collection-item avatar">
                 <div class="container">
                     <div class="row" style="margin-bottom:auto;">
@@ -87,7 +103,7 @@
                         </div>
                         <div class="col s8 offset-s2">
                             <span class="title flow-text valign techfont bold">Soccer</span>
-                            <p>Captain - Colby Men's Soccer (2015)</p>
+                            <p class="hide-on-med-and-down">Captain - Colby Men's Soccer (2015)</p>
                         </div>
                     </div>
                 </div>
@@ -100,7 +116,7 @@
                         </div>
                         <div class="col s8 offset-s2">
                             <span class="title flow-text valign techfont bold">Student Government</span>
-                            <p>President - Colby Class of 2016</p>
+                            <p class="hide-on-med-and-down">President - Colby Class of 2016</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +129,7 @@
                         </div>
                         <div class="col s8 offset-s2">
                             <span class="title flow-text valign techfont bold">Chess</span>
-                            <p>South Shore Interscholastic Chess League - 2nd Place</p>
+                            <p class="hide-on-med-and-down">South Shore Interscholastic Chess League - 2nd Place</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +142,7 @@
                         </div>
                         <div class="col s8 offset-s2">
                             <span class="title flow-text valign techfont bold">Pottery</span>
-                            <p>Colby Pottery Club</p>
+                            <p class="hide-on-med-and-down">Colby Pottery Club</p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +155,7 @@
                         </div>
                         <div class="col s8 offset-s2">
                             <span class="title flow-text valign techfont bold">Mario Kart</span>
-                            <p>Multi-Time Mushroom Cup Champion</p>
+                            <p class="hide-on-med-and-down">Multi-Time Mushroom Cup Champion</p>
                         </div>
                     </div>
                 </div>
@@ -148,115 +164,150 @@
     </div>
 </div>
 </div>
-<div class="parallax-container colby">
-        <div class="parallax">
-            <img src="actionSoccer.jpg">
-        </div>
-</div>
-<div class = "block blue" id="education">
-    <div class = "outer">
-        <p class="bold section-title white">Education</p>
-        <div class="school">
-            <div class="school_info">
-                <p class="bold white">Trinity College Dublin</p>
-                <p class="techfont white">Dublin, Ireland</p>
-                <p class="techfont white">Spring 2015</p>
-            </div>
-            <div class="school_description">
-                <p class="techfont white">What I did at Trinity</p>
-            </div>
-        </div>
-        <div class="school">
-            <div class="school_info">
-                <p class="bold white">Colby College</p>
-                <p class="techfont white">Waterville, ME</p>
-                <p class="techfont white">2012-2016</p>
-            </div>
-            <div class="school_description">
-                <p class = "techfont white">
-                    I bounced around a couple of different majors until I decided on becoming the Computer Science/Mathematical Science major that I am today. I took my first Computer Science class in the fall semester of sophomore year and have enjoyed it ever since. Colby's CS classes are mostly taught in Python and Java, but we also receive a healthy dose of C/C++ as well as exposure to other languages such as Ruby, Swift, and HTML/Javascript/CSS.
-                </p>
-            </div>
-        </div> 
-        <div class="school">
-            <div class="school_info">
-                <p class="bold white">The Noble and Greenough School</p>
-                <p class="techfont white">Dedham, MA</p>
-                <p class="techfont white">2008-2012</p>
-            </div>
-            <div class="school_description">
-                <p class = "techfont white">What I did at Nobles</p>
-            </div>
-        </div>
+<div class="parallax-container colby" id="soccerShot">
+    <div class="parallax">
+        <img src="actionSoccer.jpg">
     </div>
 </div>
-<div class = "block white" id="professional_experience">
+<div class = "block blue">
     <div class = "outer">
-        <p class="bold section-title">Professional Experiences</p>
-        <div class="experience_block">
-            <div class="experience">
-                <div class="experience_info">
-                    <p class="bold">Capital One</p>
-                    <p class="techfont">McLean, VA</p>
-                    <p class="techfont">Summer 2015</p>
+        <p class="bold section-title white-text">Education</p>
+        <div class="container section scrollspy" id="education">
+            <div class="row school valign-wrapper">
+                <div class="col l1">
+                    <img src="trinitySeal.png" class="circle valign" height="75" width="75">
                 </div>
-                <div class="experience_description">
-                    <p class="bold">Software Engineering Intern</p>
-                    <p class="techfont">TBD</p>
+                <div class="col l3 m4" style="margin-left:20px">
+                    <p class="bold white-text">Trinity College Dublin</p>
+                    <p class="techfont white-text">Dublin, Ireland</p>
+                    <p class="techfont white-text">Spring 2015</p>
                 </div>
-            </div>
-            <div class="experience">
-                <div class="experience_info">
-                    <p class="bold">Colby College</p>
-                    <p class="techfont">Waterville, ME</p>
-                    <p class="techfont">Spring 2014-Present</p>
-                </div>
-                <div class="experience_description">
-                    <p class="bold">Teaching Assistant - Colby CS Department</p>
-                    <p class="techfont">Shtuff</p>
+                <div class="col l8 m7 offset-m1">
+                    <p class="techfont white-text hide-on-small-only">What I did at Trinity</p>
                 </div>
             </div>
-        </div>
-        <div class="experience_block">
-            <div class="experience">
-                <div class="experience_info">
-                    <p class="bold">Microsoft</p>
-                    <p class="techfont">Dublin, Ireland</p>
-                    <p class="techfont">Spring 2015</p>
+            <div class="row school valign-wrapper">
+                <div class="col l1">
+                    <img src="colby-seal.png" class="circle valign" height="75" width="75">
                 </div>
-                <div class="experience_description">
-                    <p class="bold">Student-Client Programming Project</p>
-                    <p class="techfont">Shtuff</p>
+                <div class="col l3 m4" style="margin-left:20px">
+                    <p class="bold white-text">Colby College</p>
+                    <p class="techfont white-text">Waterville, ME</p>
+                    <p class="techfont white-text">2012-2016</p>
                 </div>
-            </div>
-            <div class="experience">
-                <div class="experience_info">
-                    <p class="bold">Unum</p>
-                    <p class="techfont">Portland, ME</p>
-                    <p class="techfont">Summer 2014</p>
+                <div class="col l8 m7 offset-m1">
+                    <p class = "techfont white-text hide-on-small-only">
+                        I bounced around a couple of different majors until I decided on becoming the Computer Science/Mathematical Science major that I am today. I took my first Computer Science class in the fall semester of sophomore year and have enjoyed it ever since. Colby's CS classes are mostly taught in Python and Java, but we also receive a healthy dose of C/C++ as well as exposure to other languages such as Ruby, Swift, and HTML/Javascript/CSS.
+                    </p>
                 </div>
-                <div class="experience_description">
-                    <p class="bold">Software Developer Intern</p>
-                    <p class="techfont">Shtuff</p>
+            </div> 
+            <div class="row valign-wrapper">
+                <div class="col l1">
+                    <img src="noblesSeal.jpg" class="circle valign" height="75" width="75">
+                </div>
+                <div class="col l3 m4" style="margin-left:20px">
+                    <p class="bold white-text">Noble and Greenough</p>
+                    <p class="techfont white-text">Dedham, MA</p>
+                    <p class="techfont white-text">2008-2012</p>
+                </div>
+                <div class="col l8 m7 offset-m1">
+                    <p class = "techfont white-text hide-on-small-only">What I did at Nobles</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class = "block blue" id="projects">
-    <div class = "outer">
-        <p class="bold section-title white">Projects</p>
-        <div class = "project_block">
-            <img src="ExcelSearchSnap.png" id="ExcelSearchPic"> 
+    <div class = "block white section scrollspy" id="professional_experience">
+        <div class = "outer">
+            <p class="bold section-title">Professional Experience</p>
+            <div class="experience_block">
+                <div class="experience">
+                    <div class="experience_info">
+                        <p class="bold">Capital One</p>
+                        <p class="techfont">McLean, VA</p>
+                        <p class="techfont">Summer 2015</p>
+                    </div>
+                    <div class="experience_description">
+                        <p class="bold">Software Engineering Intern</p>
+                        <p class="techfont">TBD</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience_info">
+                        <p class="bold">Colby College</p>
+                        <p class="techfont">Waterville, ME</p>
+                        <p class="techfont">Spring 2014-Present</p>
+                    </div>
+                    <div class="experience_description">
+                        <p class="bold">Teaching Assistant - Colby CS Department</p>
+                        <p class="techfont">Shtuff</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience_block">
+                <div class="experience">
+                    <div class="experience_info">
+                        <p class="bold">Microsoft</p>
+                        <p class="techfont">Dublin, Ireland</p>
+                        <p class="techfont">Spring 2015</p>
+                    </div>
+                    <div class="experience_description">
+                        <p class="bold">Student-Client Programming Project</p>
+                        <p class="techfont">Shtuff</p>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="experience_info">
+                        <p class="bold">Unum</p>
+                        <p class="techfont">Portland, ME</p>
+                        <p class="techfont">Summer 2014</p>
+                    </div>
+                    <div class="experience_description">
+                        <p class="bold">Software Developer Intern</p>
+                        <p class="techfont">Shtuff</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>    
-</div>
+    </div>
+    <div class = "block blue section scrollspy" id="projects">
+        <div class = "outer">
+            <p class="bold section-title white-text">Projects</p>
+            <div class = "project_block">
+                <img src="ExcelSearchSnap.png" id="ExcelSearchPic"> 
+            </div>
+        </div>    
+    </div>
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
+  $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
-  var options=[{selector: '#staggered-list', offset: 300, callback: 'Materialize.showStaggeredList("#staggered-list")'}];
+  var options=[{selector: '#staggered-list', offset: 0, callback: '$("#staggered-list").show(           500);Materialize.showStaggeredList("#staggered-list")'}, 
+  {selector: '#soccerShot', offset: 700, callback: 'Materialize.toast("Me playing a game of sports-ball. (I\'m on the right!)", 2500 )'}];
   Materialize.scrollFire(options);
+  $(window).scroll(function() {
+
+            // get how far we've scrolled from the top of our screen
+            var offset = $(window).scrollTop();
+            offset     = offset * .097;
+
+            // apply the offset as a css transform to our buttons
+            $('#facebook, #linkedin').css({
+                '-moz-transform': 'rotate(' + offset + 'deg)',
+                '-webkit-transform': 'rotate(' + offset + 'deg)',
+                '-o-transform': 'rotate(' + offset + 'deg)',
+                '-ms-transform': 'rotate(' + offset + 'deg)',
+                'transform': 'rotate(' + offset + 'deg)',
+            });
+            $('#twitter, #github').css({
+                '-moz-transform': 'rotate(' + -offset + 'deg)',
+                '-webkit-transform': 'rotate(' + -offset + 'deg)',
+                '-o-transform': 'rotate(' + -offset + 'deg)',
+                '-ms-transform': 'rotate(' + -offset + 'deg)',
+                'transform': 'rotate(' + -offset + 'deg)',
+            })
+
+        });
 });
 
 

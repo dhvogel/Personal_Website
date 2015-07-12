@@ -2096,7 +2096,7 @@ img.responsive-img, video.responsive-video {
   overflow: hidden;
   height: 500px; }
 .parallax-container.colby{
-    height: 1000px;
+    height: 800px;
 }
 
 .parallax {
@@ -2332,7 +2332,7 @@ td, th {
   .collection.with-header .collection-header {
     background-color: #fff;
     border-bottom: 1px solid #e0e0e0;
-    padding: 10px 20px; }
+ }
   .collection.with-header .collection-item {
     padding-left: 30px; }
   .collection.with-header .collection-item.avatar {
@@ -5315,8 +5315,7 @@ nav {
     nav ul a {
       font-size: 1rem;
       color: #fff;
-      display: block;
-      padding: 0 15px; }
+      display: block;}
     nav ul.left {
       float: left; }
   nav .input-field {

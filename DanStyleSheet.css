@@ -1,5 +1,6 @@
 * {
     font-family:"Raleway";
+    font-size:14px;
 }
 div {
     display: block;
@@ -115,10 +116,6 @@ div {
     position: relative;
 }
 
-.school {
-    height: 25%
-}
-
 .school_description {
     float: left;
     width: 60%;
@@ -201,7 +198,7 @@ input[type=submit]:hover, button:active, button:focus, button:visited {
   z-index:1;
 }
 
-.circle {
+.my-circle {
     width:250px;
     height:250px;
     border-radius:50px;
@@ -211,4 +208,16 @@ input[type=submit]:hover, button:active, button:focus, button:visited {
     background:white;
     border: 2px solid black;
     margin:0;
+}
+
+.school {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar {
+    border:0px;
+    position:fixed;
+    top:30%;
+    right:1%;
+    color:white;
 }

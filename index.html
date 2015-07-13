@@ -306,8 +306,7 @@
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
-  var options=[{selector: '#about_me', offset: 400, callback: '$("#staggered-list").show(           500);Materialize.showStaggeredList("#staggered-list")'}, 
-  {selector: '#soccerShot', offset: 700, callback: 'Materialize.toast("Me playing a game of sports-ball. (I\'m on the right!)", 2500 )'}];
+  var options=[{selector: '#about_me', offset: 400, callback: '$("#staggered-list").show(           500);Materialize.showStaggeredList("#staggered-list")'}];
   Materialize.scrollFire(options);
   $(window).scroll(function() {
 

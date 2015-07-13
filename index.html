@@ -172,6 +172,11 @@
     <div class="parallax">
         <img src="actionSoccer.jpg">
     </div>
+    <div class="card darken-1" style="top:20%;width:20%">
+        <div class="card-content">
+              <p>Me playing a game of sports-ball. (I'm on the right!)</p>
+            </div>
+        </div>
 </div>
 <div class = "block blue">
     <div class = "outer">
@@ -223,6 +228,16 @@
             </div>
         </div>
     </div>
+<div class="parallax-container colby" id="soccerShot">
+    <div class="parallax">
+        <img src="nobles-snowy.jpg">
+    </div>
+    <div class="card darken-1" style="top:20%;width:20%">
+        <div class="card-content">
+              <p>This is where I went to high school. (Seriously)</p>
+            </div>
+        </div>
+</div>
     <div class = "block white section scrollspy" id="professional_experience">
         <div class = "container">
             <p class="bold section-title">Professional Experience</p>
@@ -263,7 +278,7 @@
                         <p class="techfont">Spring 2014-Present</p>
                         <img src="colby-seal.png" height="75" width="75" class="hide-on-med-and-down">
                     </div>
-                    <div class="col l4">
+                    <div class="col l4" style="border-right:1px solid black">
                         <p class="bold">Teaching Assistant - Colby CS Department</p>
                         <ul class="collection hide-on-med-and-down">
                             <li class="collection-item no-pad">Aid computer science students with their assignments during weekly office hours.</li>
@@ -286,14 +301,6 @@
                 </div>
         </div>
     </div>
-    <div class = "block blue section scrollspy" id="projects">
-        <div class = "outer">
-            <p class="bold section-title white-text">Projects</p>
-            <div class = "project_block">
-                <img src="ExcelSearchSnap.png" id="ExcelSearchPic"> 
-            </div>
-        </div>    
-    </div>
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -306,7 +313,7 @@ $(document).ready(function(){
 
             // get how far we've scrolled from the top of our screen
             var offset = $(window).scrollTop();
-            offset     = offset * .097;
+            offset     = offset * .092;
 
             // apply the offset as a css transform to our buttons
             $('#facebook, #linkedin').css({

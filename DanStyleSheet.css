@@ -232,10 +232,10 @@ div {
 
 .navbar {
     border:0px;
-    position:fixed;
-    top:30%;
-    right:1%;
+    position:relative;
+    left:1%;
     color:white;
+    z-index:99;
 }
 
 .no-pad {
@@ -246,4 +246,6 @@ div {
     font-size:16px;
 }
 
-.
+.right {
+  float:right;
+}

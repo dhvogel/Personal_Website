@@ -6942,6 +6942,8 @@ select {
 .table-of-contents li {
   padding: 2px 0; }
 .table-of-contents a {
+  top:30%;
+  right:1%;
   display: inline-block;
   font-weight: 300;
   color: #757575;
@@ -6949,7 +6951,8 @@ select {
   height: 1.5rem;
   line-height: 1.5rem;
   letter-spacing: .4;
-  display: inline-block; }
+  display: inline-block;
+  z-index: 999; }
   .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 19px;

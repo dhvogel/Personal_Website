@@ -6944,7 +6944,6 @@ select {
 .table-of-contents a {
   top:30%;
   right:1%;
-  display: inline-block;
   font-weight: 300;
   color: #757575;
   padding-left: 20px;

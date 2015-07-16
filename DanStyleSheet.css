@@ -62,9 +62,7 @@ div {
 
 .block{
     /* width: 150px, height: auto to retain aspect ratio */
-    max-height: none;
-    max-width: none;
-    height: 700px;
+    height: 100%;
     width: auto;
     text-align: left;
     border-style: solid;
@@ -201,6 +199,27 @@ div {
     }
 }
 
+@media (max-width: 992px) {
+  .my-flow-text {
+    font-size: 12px 
+  }
+  .about-me {
+    font-size: 14px!important;
+  }
+  .exp-border-right {
+    border-right: none!important;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-me {
+    font-size:12px!important;
+  }
+}
+
+.exp-border-right {
+  border-right:1px solid black;
+}
 
 
 .homepage.overlay {
@@ -248,4 +267,8 @@ div {
 
 .right {
   float:right;
+}
+
+.parallax-container {
+  height:100%;
 }

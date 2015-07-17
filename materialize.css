@@ -2290,7 +2290,8 @@ td, th {
     margin: 0;
     border-bottom: 1px solid #e0e0e0; }
     .collection .collection-item.avatar {
-      position: relative; }
+      position: relative;
+      display:block; }
       .collection .collection-item.avatar i.circle {
         font-size: 18px;
         line-height: 42px;

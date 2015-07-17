@@ -11,7 +11,7 @@
 <body>
     <div class="parallax-container colby section scrollspy" id="home">
         <div class="parallax">
-            <img src="colby.jpg" preload="auto">
+            <img src="colby.jpg" preload=>
         </div>
         <div class="col hide-on-med-and-down m3 l2 navbar" id="navbar">
                     <ul class="section table-of-contents fixed">
@@ -176,53 +176,57 @@
             </div>
         </div>
 </div>
-<div class = "block blue">
-        <p class="bold section-title white-text">Education</p>
-        <div class="container section scrollspy" id="education">
-
-            <div class="row school valign-wrapper">
-                <div class="col l">
-                    <img src="trinitySeal.png" class="circle valign" height="75" width="75">
+<div class = "block blue" id="education">
+    
+    <p class="bold section-title white-text">Education</p>
+    <div class="container valign-wrapper">
+        <ul class="collection valign" id="staggered-list-education" style="color:white; background-color:transparent;margin:0 auto; width:70%; margin-top:40px; display:none"> 
+            <li class="collection-item avatar" style="background-color:transparent">
+                <div class="container">
+                    <div class="row" style="margin-bottom:auto;">
+                        <div class="col l2">
+                            <img src="trinitySeal.png" class="hide-on-small-only" style="margin-top:10px;" height="75" width="75">
+                        </div>
+                        <div class="col s8 offset-s2">
+                            <span class="title flow-text valign techfont bold white-text">Trinity College Dublin</span>
+                            <p class="hide-on-med-and-down">Dublin, Ireland</p>
+                            <p class="hide-on-med-and-down">Spring 2015</p>
+                            <p class="hide-on-med-and-down">Study Abroad</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l3 m4" style="margin-left:20px">
-                    <p class="bold white-text">Trinity College Dublin</p>
-                    <p class="techfont white-text">Dublin, Ireland</p>
-                    <p class="techfont white-text">Spring 2015</p>
+            </li>
+            <li class="collection-item avatar" style="background-color:transparent">
+                <div class="container">
+                    <div class="row" style="margin-bottom:auto;">
+                        <div class="col l2">
+                            <img src="colby-seal.png" class="hide-on-small-only" style="margin-top:10px;" height="75" width="75">
+                        </div>
+                        <div class="col s8 offset-s2">
+                            <span class="title flow-text valign techfont bold">Colby College</span>
+                            <p class="hide-on-med-and-down">Waterville, ME</p>
+                            <p class="hide-on-med-and-down">2012-2016</p>
+                            <p class="hide-on-med-and-down">B.A. - Computer Science/Mathematical Science</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l8 m7 offset-m1">
-                    <p class="techfont white-text hide-on-small-only">I studied abroad at Trinity during the spring semester of my junior year.</p>
+            </li>
+            <li class="collection-item avatar" style="background-color:transparent">
+                <div class="container">
+                    <div class="row" style="margin-bottom:auto;">
+                        <div class="col l2">
+                            <img src="noblesSeal.jpg" class="hide-on-small-only circle" style="margin-top:10px;" height="75" width="75">
+                        </div>
+                        <div class="col s8 offset-s2">
+                            <span class="title flow-text valign techfont bold">The Noble and Greenough School</span>
+                            <p class="hide-on-med-and-down">Dedham, MA</p>
+                            <p class="hide-on-med-and-down">2008-2012</p>
+                            <p class="hide-on-med-and-down">Diploma</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row school valign-wrapper">
-                <div class="col l1">
-                    <img src="colby-seal.png" class="circle valign" height="75" width="75">
-                </div>
-                <div class="col l3 m4" style="margin-left:20px">
-                    <p class="bold white-text">Colby College</p>
-                    <p class="techfont white-text">Waterville, ME</p>
-                    <p class="techfont white-text">2012-2016</p>
-                    <p class="techfont white-text">B.A. - Computer Science/Mathematical Science</p>
-                </div>
-                <div class="col l8 m7 offset-m1">
-                    <p class = "techfont white-text hide-on-small-only">
-                        Currently at Colby finishing up my last year of studies
-                    </p>
-                </div>
-            </div> 
-            <div class="row valign-wrapper">
-                <div class="col l1">
-                    <img src="noblesSeal.jpg" class="circle valign" height="75" width="75">
-                </div>
-                <div class="col l3 m4" style="margin-left:20px">
-                    <p class="bold white-text">Noble and Greenough</p>
-                    <p class="techfont white-text">Dedham, MA</p>
-                    <p class="techfont white-text">2008-2012</p>
-                    <p class="techfont white-text">Diploma</p>
-                </div>
-                <div class="col l8 m7 offset-m1">
-                    <p class = "techfont white-text hide-on-small-only">Attended high school at Noble and Greenough</p>
-                </div>
-            </div>
+            </li>
+        </ul>
         </div>
     </div>
 <div class="parallax-container colby" id="soccerShot">
@@ -303,7 +307,8 @@
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
-  var options=[{selector: '#about_me', offset: 400, callback: '$("#staggered-list").show(           500);Materialize.showStaggeredList("#staggered-list")'}];
+  var options=[{selector: '#about_me', offset: 400, callback: '$("#staggered-list").show(500);Materialize.showStaggeredList("#staggered-list")'},
+                {selector: '#education', offset: 400, callback: '$("#staggered-list-education").show(500);Materialize.showStaggeredList("#staggered-list-education")'}];
   Materialize.scrollFire(options);
   $(window).scroll(function() {
 

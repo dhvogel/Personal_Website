@@ -2094,10 +2094,7 @@ img.responsive-img, video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px; }
-.parallax-container.colby{
-    height: 800px;
-}
+  height: 100%; }
 
 .parallax {
   position: absolute;

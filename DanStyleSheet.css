@@ -196,6 +196,7 @@ div {
     .category-button {
         width:125px;
         height:50px;
+        margin:0;
     }
 }
 
@@ -209,11 +210,23 @@ div {
   .exp-border-right {
     border-right: none!important;
   }
+  .title-font {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 400px) {
   .about-me {
     font-size:12px!important;
+  }
+  .title-font {
+    font-size: 60px!important
+  }
+}
+
+@media (max-width: 329px) {
+  .title-font {
+    font-size: 50px!important
   }
 }
 
@@ -271,4 +284,12 @@ div {
 
 .parallax-container {
   height:100%;
+}
+
+.colby {
+  height:50%;
+}
+
+.title-font {
+  font-size: 67px;
 }

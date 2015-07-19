@@ -220,6 +220,14 @@ div {
 
 @media (max-width: 1200px) {
   .prof-exp {
+    min-height: 100%;
+    height:auto!important;
+  }
+  .about-me {
+    height:auto!important;
+  }
+  .eductation {
+    min-height: 100%;
     height:auto!important;
   }
 }

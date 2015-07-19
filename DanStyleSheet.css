@@ -218,6 +218,12 @@ div {
   }
 }
 
+@media (max-width: 1200px) {
+  .prof-exp {
+    height:auto!important;
+  }
+}
+
 @media (max-width: 400px) {
   .about-me {
     font-size:12px!important;

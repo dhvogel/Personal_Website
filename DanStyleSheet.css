@@ -62,7 +62,7 @@ div {
 
 .block{
     /* width: 150px, height: auto to retain aspect ratio */
-    height: 100%;
+    height: auto;
     width: 100%;
     border: 1px solid black
 }

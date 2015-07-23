@@ -39,6 +39,8 @@ div {
 .bold {
     font-family: "Raleway-Bold";
 }
+
+
 .bold.section-title {
     color:rgb(43, 158, 255);
     font-size: 200%;

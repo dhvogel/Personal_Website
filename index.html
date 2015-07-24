@@ -2,15 +2,16 @@
 <head>
         <title>Daniel Vogel's Personal Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="DanStyleSheet.css">
-       
-       
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+       <link rel="stylesheet" type="text/css" href="DanStyleSheet.css">
         <link rel="stylesheet" type="text/css" href="materialize.css">
         <link rel="shortcut icon" href="myNewPhoto.png"/>
        
         <script src="jquery-1.9.1.min.js"></script>
         <script src="materialize.js"></script>
         <script src="smooth-scroll.js"></script>
+        <script src="main.js"></script>
         <script type="text/javascript">
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -24,10 +25,14 @@
         </script>
 </head>
 <body>
-    <div class="parallax-container colby section scrollspy" id="home">
-        <div class="parallax">
-            <img src="colby.jpg" preload="auto">
-        </div>
+    <div class="intro-background">
+    <div class="background-video">
+      <video autoplay="" loop="" muted="" preload="" background="berlin-trim.jpg" class="StretchtoFit" style="transform: translate(0px, 0px);">
+        <source src="berlin-trim.webm" type="video/webm">
+        <source src="berlin-trim.mp4" type="video/mp4">
+        Video not supported
+      </video>
+    
         <div class="col hide-on-med-and-down m3 l2 navbar" id="navbar">
                     <ul class="section table-of-contents fixed">
                         <li><a href="#home" class="black-text" id="home_side">Home</a></li>
@@ -70,8 +75,8 @@
         
         </div>
     </div>
-</div>
-<div class="block white section scrollspy about-me" style="display:inline-flex" id="about_me">
+    </div>
+<div class="block white section scrollspy about-me" style="display:inline-flex; float:bottom" id="about_me">
     <div class="container" style="margin:auto"> 
         <div class="row">
         <div class="col l5 m6 s12">

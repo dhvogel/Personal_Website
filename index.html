@@ -349,8 +349,8 @@ $(document).ready(function(){
         });
         var vid = document.getElementById('background-vid');
             vid.oncanplay = function() {
-                //$('#loader').remove();
-                //$('#load-text').remove();
+                $('#loader').remove();
+                $('#load-text').remove();
                 $('#colby-seal').show();
                 Materialize.fadeInImage($('#colby-seal'));
             };

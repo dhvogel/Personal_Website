@@ -7051,7 +7051,6 @@ select {
  *      SHRINK_TIME = 400ms
  */
 .preloader-wrapper {
-  display: inline-block;
   position: relative;
   width: 48px;
   height: 48px; }
